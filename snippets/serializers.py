@@ -6,6 +6,9 @@ class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
         fields = ['id', 'title', 'code', 'linenos', 'language', 'style']
+
+# Method to add serializers without the ModelSerializer method
+
 # class SnippetSerializer(serializers.Serializer):
 #     # Fields that get serialized / deserialized
 #     id = serializers.IntegerField(read_only=True)
